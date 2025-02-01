@@ -4,6 +4,17 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@utility container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
 @theme {
   --font-sans: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
